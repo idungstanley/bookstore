@@ -1,11 +1,10 @@
-import React from 'react'
+import React from 'react';
 import Book from './Book';
-
 
 function Books() {
   return (
-    <Book/>
+    <Book name="stan" title="Good day" head="Seed" />
   );
 }
 
-export default Books
+export default Books;

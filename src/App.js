@@ -1,21 +1,19 @@
-import Books from "./components/Books";
-import Categories from "./components/Categories";
-import Navbar from "./components/Navbar";
-import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
-import Form from "./components/Form";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Books from './components/Books';
+import Categories from './components/Categories';
+import Navbar from './components/Navbar';
+import Form from './components/Form';
 
 function App() {
   return (
-    <>
     <Router>
-      <Navbar/>
+      <Navbar />
       <Routes>
-        <Route exact path="/" element= {<Books/>}/>
-        <Route path="/categories" element= {<Categories/>}/>
+        <Route exact path="/" element={<Books />} />
+        <Route path="/categories" element={<Categories />} />
       </Routes>
-      <Form/>
+      <Form />
     </Router>
-    </>
   );
 }
 
