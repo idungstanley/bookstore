@@ -1,8 +1,11 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Math-magician  <img src="https://img.icons8.com/external-filled-outline-wichaiwi/344/external-description-e-commerce-website-filled-outline-wichaiwi.png" alt="Bootstrap Icon" style="width: 50px; height: 50px">
+# -Bookstore  <img src="https://img.icons8.com/external-filled-outline-wichaiwi/344/external-description-e-commerce-website-filled-outline-wichaiwi.png" alt="Bootstrap Icon" style="width: 50px; height: 50px">
 
-> "Math magicians" is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to: Make simple calculations, Read a random math-related quote.
+> The Bookstore is a website similar to the "Awesome Books" website built in the previous module. You will create an MVP version of it that allows you to:
+- Display a list of books.
+- Add a book.
+- Remove a selected book.
 
 ## Built With <img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/344/external-build-agile-flaticons-lineal-color-flat-icons.png" alt="Bootstrap Icon" style="width: 50px; height: 50px">
 
