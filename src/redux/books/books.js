@@ -1,7 +1,6 @@
 // Actions
-
-const ADDBOOK = 'books/ADDBOOK';
-const REMOVEBOOK = 'books/DELETE';
+const ADDBOOK = 'books/reducerBook/ADDBOOK';
+const REMOVEBOOK = 'books/reducerBook/DELETE';
 const books = [];
 
 // Reducers
@@ -9,12 +8,10 @@ export default function reducerBook(state = books, action = {}) {
   switch (action.type) {
     case ADDBOOK:
       return [
-        ...books, action.book,
+        ...state, action.book,
       ];
     case REMOVEBOOK:
-      return [
-        books.map((book) => book.id !== action.id),
-      ];
+      return state.filter((book) => book.id !== action.id);
     default:
       return state;
   }

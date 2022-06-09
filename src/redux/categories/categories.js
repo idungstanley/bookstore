@@ -1,5 +1,5 @@
 // Action
-const CHECKSTATUS = 'categories/CHECKSTATUS';
+const CHECKSTATUS = 'categories/reducerCategories/CHECKSTATUS';
 const categories = [];
 
 // Reducer
@@ -7,7 +7,6 @@ export default function reducerCategories(state = categories, action = {}) {
   switch (action.type) {
     case CHECKSTATUS:
       return 'Under Construction';
-
     default:
       return state;
   }
