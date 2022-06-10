@@ -5,7 +5,6 @@ import Form from './Form';
 
 function Books() {
   const booksData = useSelector((state) => state.bookreducer);
-  console.log(booksData);
   return (
     <div>
       {booksData.map((eachBook) => (
