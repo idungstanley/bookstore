@@ -30,7 +30,7 @@ function Form() {
 
   return (
     <>
-      <h4>Add A form</h4>
+      <h4 className="form-heading">Add A form</h4>
       <form onSubmit={addEachBook}>
         <input
           type="text"
