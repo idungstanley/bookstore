@@ -35,25 +35,25 @@ function Form() {
         <input
           type="text"
           name=""
-          id=""
+          id="title"
           placeholder="Book Title"
           onChange={(e) => setTitle(e.target.value)}
         />
         <input
           type="text"
           name=""
-          id=""
+          id="author"
           placeholder="Author"
           onChange={(e) => setAuthor(e.target.value)}
         />
 
-        <select name="cars" id="cars" onChange={(e) => setCategory(e.target.value)}>
+        <select name="category" id="select" onChange={(e) => setCategory(e.target.value)}>
           <option defaultValue="Category">Select Category</option>
           {allCategories.map((perCategory) => (
             <option key={perCategory} value={perCategory}>{perCategory}</option>
           ))}
         </select>
-        <button type="submit">Add Book</button>
+        <button type="submit" className="add-btn">Add Book</button>
       </form>
     </>
   );
