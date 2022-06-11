@@ -1,13 +1,11 @@
+import { async } from 'q';
 import { postApi, getBookFromApi, deleteBookFromApi } from '../API/helpers';
 // Actions
 const ADDBOOK = 'books/reducerBook/ADDBOOK';
 const REMOVEBOOK = 'books/reducerBook/DELETE';
-const books = [
-  { title: 'stan go strong', author: 'sunday', id: '1' },
-  { title: 'How to be rich', author: 'sunday', id: '2' },
-  { title: 'How successfuk people think', author: 'sunday', id: '3' },
-];
-export default function reducerBook(state = books, action = {}) {
+const READ = 'books/reducerBook/READ';
+
+export default function reducerBook(state = [], action = {}) {
   switch (action.type) {
     case ADDBOOK:
       return [...state, action.book];
@@ -19,10 +17,21 @@ export default function reducerBook(state = books, action = {}) {
 }
 
 // Action creators
-export function addBook(book) {
-  return { type: ADDBOOK, book };
-}
 
-export function deleteBook(id) {
-  return { type: REMOVEBOOK, id };
-}
+export const getReadBooks = () => async (dispatch) => {
+  const books = await getBookFromApi();
+  dispatch({ type: READ, payload: books });
+};
+export const addBook = (book) => async (dispatch) => {
+  await postApi(book);
+  dispatch({
+    type: ADDBOOK,
+    payload:
+  { ...book, progress: 0 },
+  });
+};
+
+export const deleteBook = (id) => async (dispatch) => {
+  await deleteBookFromApi(id);
+  dispatch({ type: REMOVEBOOK, payload: id });
+};
