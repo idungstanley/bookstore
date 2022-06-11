@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import Book from './Book';
+import Book from './EachBookCard/Book';
 import Form from './Form';
 
 function Books() {
@@ -14,6 +14,7 @@ function Books() {
           key={eachBook.id}
           id={eachBook.id}
           title={eachBook.title}
+          category={eachBook.category}
         />
       ))}
       <Form />
