@@ -1,4 +1,3 @@
-import { async } from 'q';
 import { postApi, getBookFromApi, deleteBookFromApi } from '../API/helpers';
 // Actions
 const ADDBOOK = 'books/reducerBook/ADDBOOK';
@@ -7,10 +6,12 @@ const READ = 'books/reducerBook/READ';
 
 export default function reducerBook(state = [], action = {}) {
   switch (action.type) {
+    case READ:
+      return action.payload;
     case ADDBOOK:
-      return [...state, action.book];
+      return [...state, action.payload];
     case REMOVEBOOK:
-      return state.filter((book) => book.id !== action.id);
+      return state.filter((book) => book.id !== action.payload);
     default:
       return state;
   }
