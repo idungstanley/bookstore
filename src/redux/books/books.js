@@ -1,3 +1,4 @@
+import { postApi, getBookFromApi, deleteBookFromApi } from '../API/helpers';
 // Actions
 const ADDBOOK = 'books/reducerBook/ADDBOOK';
 const REMOVEBOOK = 'books/reducerBook/DELETE';
@@ -6,8 +7,6 @@ const books = [
   { title: 'How to be rich', author: 'sunday', id: '2' },
   { title: 'How successfuk people think', author: 'sunday', id: '3' },
 ];
-
-// Reducers
 export default function reducerBook(state = books, action = {}) {
   switch (action.type) {
     case ADDBOOK:
