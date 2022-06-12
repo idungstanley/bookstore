@@ -15,6 +15,7 @@ function Books() {
           id={eachBook.id}
           title={eachBook.title}
           category={eachBook.category}
+          progress={eachBook.progress}
         />
       ))}
       <Form />
