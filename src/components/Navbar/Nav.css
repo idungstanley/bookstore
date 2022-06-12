@@ -22,7 +22,7 @@ ul {
 }
 
 .logo {
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 1.875rem;
   font-weight: bold;
   font-stretch: normal;
@@ -34,7 +34,7 @@ ul {
 
 .book-tab {
   text-decoration: none;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 0.813rem;
   font-weight: normal;
   font-style: normal;
@@ -42,31 +42,30 @@ ul {
   color: #121212;
 }
 
-.book-tab:hover{
- color: rgba(0, 0, 0, 0.397);
+.book-tab:hover {
+  color: rgba(0, 0, 0, 0.397);
 }
 
 .category {
   text-decoration: none;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 0.813rem;
   font-weight: normal;
   letter-spacing: 1.9px;
   color: #121212;
 }
 
-.category:hover{
- color: rgba(0, 0, 0, 0.397);
+.category:hover {
+  color: rgba(0, 0, 0, 0.397);
 }
 
 .line {
   width: 94%;
- margin: 0 50px 5px 42px;
+  margin: 0 50px 5px 42px;
 }
 
 .oval {
   border: 1px solid white;
   border-radius: 50%;
-  box-shadow: #121212;
   margin-right: 4%;
 }
