@@ -18,6 +18,7 @@ function Books() {
           progress={eachBook.progress}
         />
       ))}
+      <hr className="line" />
       <Form />
     </div>
   );

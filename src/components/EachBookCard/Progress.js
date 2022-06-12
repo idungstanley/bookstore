@@ -5,7 +5,7 @@ import './progress.css';
 
 function BookProgress({ progress }) {
   return (
-    <secction className="progress-section">
+    <section className="progress-section">
       <CircularProgressBar
         size={50}
         animationSmooth="1s ease-out"
@@ -15,13 +15,13 @@ function BookProgress({ progress }) {
         number={false}
       />
       <div className="progressDetails">
-        <p>
+        <p className="percent">
           {progress}
           %
         </p>
         <span className="status">{progress === 100 ? 'Completed' : 'Not Completed'}</span>
       </div>
-    </secction>
+    </section>
   );
 }
 

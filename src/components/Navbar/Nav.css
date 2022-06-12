@@ -1,6 +1,7 @@
 .navbar {
   width: 100%;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   background-color: #ffff;
   height: 3rem;
@@ -56,4 +57,16 @@ ul {
 
 .category:hover{
  color: rgba(0, 0, 0, 0.397);
+}
+
+.line {
+  width: 94%;
+ margin: 0 50px 5px 42px;
+}
+
+.oval {
+  border: 1px solid white;
+  border-radius: 50%;
+  box-shadow: #121212;
+  margin-right: 4%;
 }

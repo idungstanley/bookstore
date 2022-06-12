@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import { deleteBook } from '../../redux/books/books';
 import BookProgress from './Progress';
 import './card.css';
+import Chapter from './Chapter';
 
 function Book({
   title, author, id, category, progress,
@@ -33,6 +34,7 @@ function Book({
         </div>
       </article>
       <BookProgress progress={progress} />
+      <Chapter />
     </section>
   );
 }
