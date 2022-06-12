@@ -3,3 +3,16 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  background-color: #fafafa;
+}
+
+.wrap {
+  height: 100%;
+  padding: 20px;
+  width: 90%;
+  margin: 50px 50px;
+  background-color: #f5f6fa;
+  box-shadow: 10px 10px 8px 10px #888;
+}

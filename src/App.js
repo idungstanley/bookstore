@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import Books from './components/Books';
 import Categories from './components/Categories';
-import Navbar from './components/Navbar';
+import Navbar from './components/Navbar/Navbar';
 import { getReadBooks } from './redux/books/books';
 import './app.css';
 
@@ -14,11 +14,13 @@ function App() {
   }, []);
   return (
     <Router>
-      <Navbar />
-      <Routes>
-        <Route exact path="/" element={<Books />} />
-        <Route path="/categories" element={<Categories />} />
-      </Routes>
+      <main className="wrap">
+        <Navbar />
+        <Routes>
+          <Route exact path="/" element={<Books />} />
+          <Route path="/categories" element={<Categories />} />
+        </Routes>
+      </main>
     </Router>
   );
 }

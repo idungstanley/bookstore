@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import Book from './Book';
-import Form from './Form';
+import Book from './EachBookCard/Book';
+import Form from './AddBookForm/Form';
 
 function Books() {
   const booksData = useSelector((state) => state.bookreducer);
@@ -14,8 +14,11 @@ function Books() {
           key={eachBook.id}
           id={eachBook.id}
           title={eachBook.title}
+          category={eachBook.category}
+          progress={eachBook.progress}
         />
       ))}
+      <hr className="line" />
       <Form />
     </div>
   );

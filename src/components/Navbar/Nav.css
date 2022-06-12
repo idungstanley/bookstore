@@ -1,0 +1,71 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffff;
+  height: 3rem;
+  padding-left: 3%;
+}
+
+.flex {
+  width: 50%;
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.logo {
+  font-family: Montserrat, sans-serif;
+  font-size: 1.875rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #0290ff;
+}
+
+.book-tab {
+  text-decoration: none;
+  font-family: Montserrat, sans-serif;
+  font-size: 0.813rem;
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: 1.9px;
+  color: #121212;
+}
+
+.book-tab:hover {
+  color: rgba(0, 0, 0, 0.397);
+}
+
+.category {
+  text-decoration: none;
+  font-family: Montserrat, sans-serif;
+  font-size: 0.813rem;
+  font-weight: normal;
+  letter-spacing: 1.9px;
+  color: #121212;
+}
+
+.category:hover {
+  color: rgba(0, 0, 0, 0.397);
+}
+
+.line {
+  width: 90%;
+  margin: 0 50px 5px 40px;
+}
+
+.oval {
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-right: 4%;
+}

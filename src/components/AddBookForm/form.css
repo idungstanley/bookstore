@@ -1,0 +1,60 @@
+.form-heading {
+  margin-left: 40px;
+  font-family: Montserrat, sans-serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.18px;
+  color: #888;
+}
+
+#title {
+  width: 33%;
+  height: 35px;
+  padding: 5px;
+  border-radius: 4px;
+  border: solid 1px #ffff;
+  background-color: #ffff;
+}
+
+#author {
+  width: 33%;
+  padding: 5px;
+  height: 35px;
+  border-radius: 4px;
+  border: solid 1px #ffff;
+  background-color: #ffff;
+}
+
+#select {
+  height: 35px;
+  border-radius: 4px;
+  border: solid 1px #ffff;
+  background-color: #ffff;
+}
+
+form {
+  width: 90%;
+  margin: 5px 40px;
+  display: flex;
+  gap: 3%;
+}
+
+.add-btn {
+  height: 35px;
+  padding: 4px;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  width: 120px;
+  background-color: #0290ff;
+  color: #ffff;
+}
+
+#title:focus,
+#author:focus {
+  outline: none;
+  padding: 5px;
+}

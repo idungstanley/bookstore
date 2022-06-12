@@ -1,0 +1,33 @@
+.progress-section {
+  display: flex;
+  gap: 10px;
+  width: 33.33%;
+}
+
+.status {
+  opacity: 0.5;
+  font-family: Montserrat, sans-serif;
+  font-size: 0.875rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.percent {
+  font-family: Montserrat, sans-serif;
+  font-size: 1.5rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.chapter {
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+  gap: 5px;
+}
