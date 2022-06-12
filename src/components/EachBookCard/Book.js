@@ -15,7 +15,6 @@ function Book({
   return (
     <section className="card">
       <article>
-
         <span className="cartegory-select">{category}</span>
         <h1 className="heading-one">{title}</h1>
         <p className="author-card">{author}</p>

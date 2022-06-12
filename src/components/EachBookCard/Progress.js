@@ -19,7 +19,7 @@ function BookProgress({ progress }) {
           {progress}
           %
         </p>
-        <span>{progress === 100 ? 'Completed' : 'Not Completed'}</span>
+        <span className="status">{progress === 100 ? 'Completed' : 'Not Completed'}</span>
       </div>
     </secction>
   );
