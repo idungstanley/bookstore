@@ -14,11 +14,13 @@ function App() {
   }, []);
   return (
     <Router>
-      <Navbar />
-      <Routes>
-        <Route exact path="/" element={<Books />} />
-        <Route path="/categories" element={<Categories />} />
-      </Routes>
+      <main className="wrap">
+        <Navbar />
+        <Routes>
+          <Route exact path="/" element={<Books />} />
+          <Route path="/categories" element={<Categories />} />
+        </Routes>
+      </main>
     </Router>
   );
 }

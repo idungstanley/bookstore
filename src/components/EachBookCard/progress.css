@@ -1,6 +1,7 @@
 .progress-section {
   display: flex;
   gap: 10px;
+  width: 33.33%;
 }
 
 .status {
@@ -26,6 +27,7 @@
 
 .chapter {
   display: flex;
+  width: 30%;
   flex-direction: column;
   gap: 5px;
 }

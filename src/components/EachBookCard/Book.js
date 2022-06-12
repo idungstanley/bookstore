@@ -15,7 +15,7 @@ function Book({
   };
   return (
     <section className="card">
-      <article>
+      <article className="book-details">
         <span className="cartegory-select">{category}</span>
         <h1 className="heading-one">{title}</h1>
         <p className="author-card">{author}</p>

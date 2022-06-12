@@ -1,5 +1,5 @@
 .card {
-  width: 95%;
+  width: 90%;
   height: max-content;
   margin: 30px;
   display: flex;
@@ -56,4 +56,8 @@
 .button {
   display: flex;
   gap: 10px;
+}
+
+.book-details {
+  width: 33.33%;
 }
