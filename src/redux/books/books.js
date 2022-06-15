@@ -1,4 +1,4 @@
-import { postApi, getBookFromApi, deleteBookFromApi } from '../API/helpers';
+import getBookFromApi, { postApi, deleteBookFromApi } from '../API/helpers';
 // Actions
 const ADDBOOK = 'books/reducerBook/ADDBOOK';
 const REMOVEBOOK = 'books/reducerBook/DELETE';

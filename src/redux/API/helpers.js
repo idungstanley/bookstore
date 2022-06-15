@@ -18,7 +18,7 @@ const getBookFromApi = async () => {
   return books;
 };
 
-const postApi = async (book) => {
+export const postApi = async (book) => {
   console.log(book);
   const requestBody = {
     item_id: book.id,
@@ -36,10 +36,10 @@ const postApi = async (book) => {
   await fetch(postUrl, options).catch((error) => error.message);
 };
 
-const deleteBookFromApi = async (id) => {
+export const deleteBookFromApi = async (id) => {
   await fetch(postUrl + id, {
     method: 'DELETE',
   }).catch((error) => error.message);
 };
 
-module.exports = { postApi, getBookFromApi, deleteBookFromApi };
+export default getBookFromApi;
